@@ -4,12 +4,12 @@ import { Images } from '../../assets'
 export const Bannner = () => {
   const { HeaderIllustration } = Images
   return (
-    <div className="w-full flex max-h-full items-center">
+    <div className="w-full flex flex-col-reverse md:flex-row max-h-full items-center">
       <div className="left_Banner flex flex-1 flex-col gap-8">
-        <h1 className="bg-gradient-to-r from-[#AE67FA] via-[#F49867] to-[#F49867] bg-clip-text text-transparent text-7xl leading-[75px] font-semibold">
+        <h1 className="bg-gradient-to-r from-[#AE67FA] via-[#F49867] to-[#F49867] bg-clip-text text-transparent text-3xl lg:text-7xl lg:leading-[75px] font-semibold">
           Let’s Build Something amazing with GPT-3 OpenAI
         </h1>
-        <p className="text-[#81AFDD] w-[70%] leading-loose">
+        <p className="text-[#81AFDD] lg:w-[70%] leading-loose">
           Yet bed any for travelling assistance indulgence unpleasing. Not
           thoughts all exercise blessing. Indulgence way everything joy
           alteration boisterous the attachment. Party we years to order allow
