@@ -9,7 +9,7 @@ import { ToastContainer } from 'react-toastify';
 function App() {
   const {user} = useUserAuth()
   return (
-    <div className="md:p-10">
+    <div className="max-w-screen-2xl mx-auto">
       <Routes>
         <Route path="/" element={<Navbar/>}>
         <Route index element={<Home/>} />

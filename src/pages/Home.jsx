@@ -1,10 +1,11 @@
 import React from 'react'
-import { Bannner } from './HomeSection'
+import { Bannner, Logos } from './HomeSection'
 
 export const Home = () => {
   return (
     <div>
       <Bannner/>
+      <Logos />
     </div>
   )
 }
