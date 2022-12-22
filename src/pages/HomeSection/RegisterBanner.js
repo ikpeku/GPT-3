@@ -1,0 +1,14 @@
+import React from 'react'
+
+export const RegisterBanner = () => {
+  return (
+    <div className='flex justify-between items-center bg-gradient-to-r from-[#AE67FA] to-[#F49867] w-full py-6 px-16 my-12'>
+        <div>
+            <h6 className='text-sm text-black'>Request Early Access to Get Started</h6>
+            <h3 className='text-lg font-bold text-black'>Register today & start exploring the endless possiblities.</h3>
+        </div>
+        <button type='button' className='text-white bg-black rounded-full p-4'>Get Started</button>
+
+    </div>
+  )
+}

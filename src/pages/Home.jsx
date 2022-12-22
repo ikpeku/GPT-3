@@ -1,8 +1,10 @@
 import React from "react";
 import {
   Bannner,
+  Blog,
   Library,
   Logos,
+  RegisterBanner,
   TheFuture,
   ThePossibility,
 } from "./HomeSection";
@@ -15,6 +17,8 @@ export const Home = () => {
       <Library />
       <TheFuture />
       <ThePossibility />
+      <RegisterBanner />
+      <Blog />
     </div>
   );
 };

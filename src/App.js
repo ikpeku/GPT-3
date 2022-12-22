@@ -5,6 +5,7 @@ import { useUserAuth } from "./hooks/useUserAuth";
 
 import { ToastContainer } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
+import { FooterSection } from "./pages/HomeSection";
 
 function App() {
   const {user} = useUserAuth()
@@ -18,6 +19,7 @@ function App() {
         </Route>
         <Route path="*" element={<NotFound/>} />
       </Routes>
+      <FooterSection />
       <ToastContainer />
    
     </div>
