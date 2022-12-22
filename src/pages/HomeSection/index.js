@@ -1,3 +1,5 @@
-export {Bannner} from "./Bannner"
-export {Logos} from "./Logos"
-export {Library} from "./Library"
+export { Bannner } from './Bannner'
+export { Logos } from './Logos'
+export { Library } from './Library'
+export { TheFuture } from './TheFuture'
+export { ThePossibility } from './ThePossibility'

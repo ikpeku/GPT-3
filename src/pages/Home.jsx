@@ -1,13 +1,20 @@
-import React from 'react'
-import { Bannner, Library, Logos } from './HomeSection'
-
+import React from "react";
+import {
+  Bannner,
+  Library,
+  Logos,
+  TheFuture,
+  ThePossibility,
+} from "./HomeSection";
 
 export const Home = () => {
   return (
     <div>
-      <Bannner/>
+      <Bannner />
       <Logos />
       <Library />
+      <TheFuture />
+      <ThePossibility />
     </div>
-  )
-}
+  );
+};

@@ -3,7 +3,7 @@ import { RectangularIcon } from '../../component'
 
 export const Library = () => {
   return (
-    <div className="w-11/12 mx-auto bg-gradient-to-br from-[#0F4279] via-[#0F4279] to-[#1B78DE] p-12">
+    <div className="bg-gradient-to-br from-[#0F4279] via-[#0F4279] to-[#1B78DE] p-12 my-16">
       <div className="flex justify-between ">
         <RectangularIcon text="What is GPT-3" space="pt-3" />
 
