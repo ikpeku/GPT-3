@@ -1,12 +1,13 @@
 import React from 'react'
 import { Images } from '../assets'
 
-export const RectangularIcon = ({text}) => {
+export const RectangularIcon = ({text, space}) => {
     const {rectangularIcon} = Images
   return (
-    <div>
+    <div className='text-white font-bold text-lg'>
         <img src={rectangularIcon} alt="icon" />
-        <h3>{text}</h3>
+        {/* <br /> */}
+        <h3 className={space}>{text}</h3>
     </div>
   )
 }

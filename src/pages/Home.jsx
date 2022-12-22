@@ -1,11 +1,13 @@
 import React from 'react'
-import { Bannner, Logos } from './HomeSection'
+import { Bannner, Library, Logos } from './HomeSection'
+
 
 export const Home = () => {
   return (
     <div>
       <Bannner/>
       <Logos />
+      <Library />
     </div>
   )
 }
