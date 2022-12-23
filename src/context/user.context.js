@@ -11,7 +11,8 @@ export const userContext = createContext({
 const initial = {
     user: null,
     error: null,
-    isLoading: false 
+    isLoading: false,
+    email: null
 }
 
 const userReducer = (state, action) => {
@@ -23,6 +24,8 @@ const userReducer = (state, action) => {
             return {...state, user: null}
         case "ERROR":
             return {...state, error: payload}
+        case "EMAIL":
+            return {...state, email: payload}
         default:
             return state;
     }

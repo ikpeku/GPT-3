@@ -3,11 +3,11 @@ import { RectangularIcon } from '../../component'
 
 export const Library = () => {
   return (
-    <div className="bg-gradient-to-br from-[#0F4279] via-[#0F4279] to-[#1B78DE] p-12 my-16">
-      <div className="flex justify-between ">
+    <div className="bg-gradient-to-br from-[#0F4279] via-[#0F4279] to-[#1B78DE] p-4 sm:p-12 my-16">
+      <div className="sm:flex justify-between  gap-5">
         <RectangularIcon text="What is GPT-3" space="pt-3" />
 
-        <p className="text-[#81AFDD] text-sm lg:text-lg leading-loose w-4/5 ">
+        <p className="text-[#81AFDD] text-sm lg:text-lg leading-loose sm:w-4/5 ">
           We so opinion friends me message as delight. Whole front do of plate
           heard oh ought. His defective nor convinced residence own. Connection
           has put impossible own apartments boisterous. At jointure ladyship an
@@ -15,7 +15,7 @@ export const Library = () => {
         </p>
       </div>
       <br />
-      <div className="flex justify-between bg-gradient-to-r from-[#AE67FA] via-[#F49867] to-[#F49867] bg-clip-text text-transparent py-6">
+      <div className="flex justify-between gap-3 bg-gradient-to-r from-[#AE67FA] via-[#F49867] to-[#F49867] bg-clip-text text-transparent py-6">
         <h3 className="font-bold text-lg">
           The possibilities are beyond your imagination
         </h3>
@@ -23,7 +23,7 @@ export const Library = () => {
       </div>
       <br />
 
-      <div className='flex justify-between w-full gap-5'>
+      <div className='flex flex-col sm:flex-row justify-between w-full gap-5'>
         <div className='flex-1 '>
           <RectangularIcon text="Chatbots" space="pt-1" />
           <p className="text-[#81AFDD] text-sm lg:text-lg leading-loose pt-5 ">

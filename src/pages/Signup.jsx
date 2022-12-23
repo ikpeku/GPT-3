@@ -3,8 +3,22 @@ import { Link } from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { SignupWithEmailAndPassword } from "../utils/firebse";
+import { useUserAuth } from "../hooks/useUserAuth";
 
 export const Signup = () => {
+
+  const {email} = useUserAuth()
+
+
+  const saveValues = {
+    firstName: "",
+    lastName: "",
+    email: email,
+    password: "",
+    confirmPassword: "",
+    marketing_accept: false,
+  };
+
   const initialValues = {
     firstName: "",
     lastName: "",
@@ -30,8 +44,6 @@ export const Signup = () => {
   });
 
   const handleSubmit = async (values) => {
-    console.log(values);
-
     const { email, password, firstName, lastName } = values;
     const displayName = `${firstName} ${lastName}`;
     await SignupWithEmailAndPassword(email, password, displayName);
@@ -111,8 +123,10 @@ export const Signup = () => {
 
               <Formik
                 onSubmit={handleSubmit}
-                initialValues={initialValues}
+                initialValues={saveValues || initialValues}
                 validationSchema={SignupSchema}
+                enableReinitialize
+                
               >
                 {(formik) => {
                   return (
